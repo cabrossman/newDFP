@@ -1,0 +1,160 @@
+
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button { 
+  display: none !important;
+}
+
+body {
+  font-family: Source Sans Pro;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  color: #444;
+  font-weight: 300;
+}
+
+hr {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border: 0;
+  border-top: 1px solid #000000;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/*formatting four main form blocks */
+.ad-unit-setup-div {
+  width:20%;
+  float:left;
+  background-color: #F0F8FF;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.geo-targeting-div {
+  width:20%;
+  float:left;
+  background-color: #F0F8FF;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.custom-targeting-div {
+  width:20%;
+  float:left;
+  background-color: #F0F8FF;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.goal-details-div {
+  width:20%;
+  float:left;
+  background-color: #F0F8FF;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+/*formatting outputs */
+.availability-output-div {
+  width:80%;
+  clear: both;
+  display:block;
+  background-color: #ffffff;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+/*formatting within "formatting outputs" on availability-output-div, start*/
+.avails-div {
+  width:35%;
+  float:left;
+}
+
+.definitions-div {
+  width:50%;
+  float:left;
+}
+/*formatting within "formatting outputs" on availability-output-div, end*/
+
+.AvailabilityButtons {
+  width:80%;
+  clear: both;
+  display:block;
+  background-color: #ffffff;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.contending {
+  width:80%;
+  clear: both;
+  display:block;
+  background-color: #ffffff;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+
+
+/*used for formatting submit button*/
+#submit {
+  margin-top: 40px;
+  margin-right: 20px;
+  float:right;
+}
+
+#submit_msg {
+  margin-top: 25px;
+  margin-right: 10px;
+  float:right;
+}
+
+/*used for JS to hide buttons*/
+.my-hidden {
+  display: none;
+}
+
+/*used for formatting busy indicator*/
+div.shinysky-busy-indicator {
+  z-index: 10000 !important;
+  position:fixed;
+  top: 25%;
+  left: 40%;
+  margin-top: auto;
+  margin-left: auto;
+  display:none;
+  background: rgba(230, 230, 230, .8);
+  text-align: center;
+  font-size: x-large !important;
+  font-family: Source Sans Pro;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  border: 1px solid grey !important;
+  border-radius: 5px;
+}
+
+div.shinysky-busy-indicator p {
+  margin-bottom: 20px !important;
+}
+
+.input-sm, .form-group-sm .form-control {
+  font-size: 16px;
+}
+
+.form-control {
+  font-size: 16px;
+}

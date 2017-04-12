@@ -1,0 +1,140 @@
+
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button { 
+  display: none !important;
+}
+
+body {
+  font-family: Source Sans Pro;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  color: #444;
+  font-weight: 300;
+}
+
+.first-div {
+  width:30%;
+  float:left;
+  background-color: #F0F8FF;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.second-div {
+  width:30%;
+  float:left;
+  background-color: #FFF6E5;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.third-div {
+  width:35%;
+  float:left;
+  background-color: #F0F8FF;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.one-fourth-div {
+  width:25%;
+  float:left;
+}
+
+.one-third-div {
+  width:33%;
+  float:left;
+}
+
+.two-third-div {
+  width:50%;
+  float:left;
+}
+
+.mandatory_star { 
+  color: red; 
+}
+
+.shiny-input-container { 
+   margin-top: 5px; 
+}
+
+.form-control { 
+  padding-right: 2px !important;
+}
+
+#submit {
+  margin-top: 40px;
+  margin-right: 20px;
+  float:right;
+}
+
+#submit_msg {
+  margin-top: 25px;
+  margin-right: 10px;
+  float:right;
+}
+
+#submit_another {
+  margin-top: 25px;
+  margin-right: 20px;
+  float:right;
+}
+
+#error { 
+  color: red; 
+}
+
+#adminPanel { 
+  border: 4px solid #aaa; 
+  padding: 0 20px 20px; 
+}
+
+hr {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border: 0;
+  border-top: 1px solid #000000;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+div.shinysky-busy-indicator {
+  z-index: 10000 !important;
+  position:fixed;
+  top: 25%;
+  left: 40%;
+  margin-top: auto;
+  margin-left: auto;
+  display:none;
+  background: rgba(230, 230, 230, .8);
+  text-align: center;
+  font-size: x-large !important;
+  font-family: Source Sans Pro;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+  padding-right: 30px;
+  border: 1px solid grey !important;
+  border-radius: 5px;
+}
+
+div.shinysky-busy-indicator p {
+  margin-bottom: 20px !important;
+}
+
+.input-sm, .form-group-sm .form-control {
+  font-size: 16px;
+}
+
+.form-control {
+  font-size: 16px;
+}

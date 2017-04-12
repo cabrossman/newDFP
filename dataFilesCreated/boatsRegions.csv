@@ -1,0 +1,62 @@
+id,name,canonicalparentid,countrycode,type,boats_region
+20116,New Brunswick,2124,CA,PROVINCE,Eastern Canada
+20117,Newfoundland and Labrador,2124,CA,PROVINCE,Eastern Canada
+20118,Nova Scotia,2124,CA,PROVINCE,Eastern Canada
+20121,Ontario,2124,CA,PROVINCE,Eastern Canada
+20122,Prince Edward Island,2124,CA,PROVINCE,Eastern Canada
+20123,Quebec,2124,CA,PROVINCE,Eastern Canada
+21142,Florida,2840,US,STATE,Florida (State only)
+21133,Alabama,2840,US,STATE,Gulf Coast
+21151,Louisiana,2840,US,STATE,Gulf Coast
+21158,Mississippi,2840,US,STATE,Gulf Coast
+21176,Texas,2840,US,STATE,Gulf Coast
+21141,Delaware,2840,US,STATE,Mid Atlantic
+21140,District of Columbia,2840,US,STATE,Mid Atlantic
+21153,Maryland,2840,US,STATE,Mid Atlantic
+21171,Pennsylvania,2840,US,STATE,Mid Atlantic
+21178,Virginia,2840,US,STATE,Mid Atlantic
+21183,West Virginia,2840,US,STATE,Mid Atlantic
+21139,Connecticut,2840,US,STATE,New England
+21154,Maine,2840,US,STATE,New England
+21152,Massachusetts,2840,US,STATE,New England
+21163,New Hampshire,2840,US,STATE,New England
+21172,Rhode Island,2840,US,STATE,New England
+21179,Vermont,2840,US,STATE,New England
+21164,New Jersey,2840,US,STATE,New York/New Jersey
+21167,New York,2840,US,STATE,New York/New Jersey
+21132,Alaska,2840,US,STATE,Pacific Northwest
+21146,Idaho,2840,US,STATE,Pacific Northwest
+21159,Montana,2840,US,STATE,Pacific Northwest
+21170,Oregon,2840,US,STATE,Pacific Northwest
+21180,Washington,2840,US,STATE,Pacific Northwest
+21184,Wyoming,2840,US,STATE,Pacific Northwest
+21135,Arkansas,2840,US,STATE,Southeast
+21143,Georgia,2840,US,STATE,Southeast
+21150,Kentucky,2840,US,STATE,Southeast
+21160,North Carolina,2840,US,STATE,Southeast
+21173,South Carolina,2840,US,STATE,Southeast
+21175,Tennessee,2840,US,STATE,Southeast
+21136,Arizona,2840,US,STATE,West Coast
+21137,California,2840,US,STATE,West Coast
+21138,Colorado,2840,US,STATE,West Coast
+21144,Hawaii,2840,US,STATE,West Coast
+21166,Nevada,2840,US,STATE,West Coast
+21165,New Mexico,2840,US,STATE,West Coast
+21177,Utah,2840,US,STATE,West Coast
+20113,Alberta,2124,CA,PROVINCE,Western Canada
+20114,British Columbia,2124,CA,PROVINCE,Western Canada
+20115,Manitoba,2124,CA,PROVINCE,Western Canada
+20124,Saskatchewan,2124,CA,PROVINCE,Western Canada
+21147,Illinois,2840,US,STATE,Midwest
+21148,Indiana,2840,US,STATE,Midwest
+21145,Iowa,2840,US,STATE,Midwest
+21149,Kansas,2840,US,STATE,Midwest
+21155,Michigan,2840,US,STATE,Midwest
+21156,Minnesota,2840,US,STATE,Midwest
+21157,Missouri,2840,US,STATE,Midwest
+21162,Nebraska,2840,US,STATE,Midwest
+21161,North Dakota,2840,US,STATE,Midwest
+21168,Ohio,2840,US,STATE,Midwest
+21169,Oklahoma,2840,US,STATE,Midwest
+21174,South Dakota,2840,US,STATE,Midwest
+21182,Wisconsin,2840,US,STATE,Midwest

@@ -1,0 +1,2 @@
+R server:
+	What is this "cancel.onSessionEnded"

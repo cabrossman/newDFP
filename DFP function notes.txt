@@ -1,0 +1,97 @@
+General Notes:
+
+probably best to create automation to store keys daily in DW. Maybe create a custom extractor
+
+
+functions needed for pulling avails through an API:
+1. DFP_date2DateTimeObj 
+		# first, it's helpful to have a function that takes the current time
+		# and converts it into a DFP-friendly list
+		# you'll note that we add an hour if requesting for today because
+		# forecasts must "start" in the future. If you use the exact time right now
+		# when you create the object, then it will already be in the past by the time you 
+		# submit to DFP
+
+2. DFP_constructLineItem 
+		# second create a handy function for constructing the line items
+		# because it's really compicated to get the format just right, so
+		# use thsi function to simply plug in the values you care about
+
+3. DFP_constructInventoryTargetingList
+	Takes a vector of GeoKeys which one filters beforehand
+	could have the user select on of the larger keys to break down geographies by...
+		such as select all postal codes
+		
+	takes single ad unit and single position to break down in many ways
+	
+	need to understand that last function a bit better
+	
+4. Custom Targeting
+	If make OR class then top level logical operator equals OR.
+		Everything is repeated on BOTH sides of OR except one has make and the other has class
+	
+	
+	Step one -- Determine Number of children
+		If brand or class then 2 children
+		
+		Could be up to 9 children if all OR targets -- one for each key
+		1. class
+		2. condition
+		3. length
+		4. make
+		5. page
+		6. pos
+		7. site_version
+		8. state
+		9. type
+		10. year
+		
+		Radio Button:
+			None - All "AND" criteria
+			make-OR-class
+			make-OR-type
+			class-OR-type
+			make-OR-class-OR-type
+			
+		pass this within the funciton
+		1. this logic passed will depend on what gets called
+		
+	Implementation
+	1. Pass a DF - filtered down to all the key values entered
+	2. Pass Radio button which identifies and-or relationships
+	
+	
+	#current logic STEVE
+	indiv_possibilities = for all criteria in key values, we get all combinations in rows 
+	ct_object = an empty list with length: nrow(indiv_possibilities)+1
+	ct_object[[1]] <- 'OR'
+		for every indiv_possibilities rows = (values Ids)
+			one_ct_object = create empty list with number of entries = ncol(indiv_possibilities) +2
+			one_ct_object[[1]] <- 'AND'
+			one_ct_object[[length(one_ct_object)]] <- c('type'="CustomCriteriaSet")
+			names(one_ct_object) <- c('logicalOperator', rep('children', ncol(indiv_possibilities)), '.attrs')
+			for every indiv_possibilities columns (keyIds)
+				assign each individual KV to the list
+				
+
+			
+	Level-1
+	logical operator = OR
+	number of children = n(OR criterias)
+		level-2 (for level-1 child)
+		logical operator = AND
+		number of children = n(keys) - n(OR criterias) #only pick on key in OR criteria per child
+		.attrs = type='CustomCriteria'
+			level-3 (for each level-2 child)
+			key-values = ...
+			valueIds = for each valueId in Key = ...
+			opeartor = IS
+			.attrs = type='CustomCriteria'
+		
+		
+		
+Questions
+	1. Will each page have pos?
+	2. If no page targeting then ROS
+	3. If no 
+	

@@ -1,0 +1,48 @@
+
+#notes on to download and admin shiny https://www.rstudio.com/products/shiny/download-server/
+
+#admin guide http://docs.rstudio.com/shiny-server/
+
+#dont know what this means to you but I've read to setup: the DNS and routing using NGINX webserver
+
+#bootstrap commands
+  # install Shiny server
+  wget https://download3.rstudio.org/centos5.9/x86_64/shiny-server-$SHINYVERSION-rh5-x86_64.rpm
+  sudo yum -y install --nogpgcheck shiny-server-$SHINYVERSION-rh5-x86_64.rpm
+  
+  sudo R --no-save << EOF
+install.packages(c('shiny'),
+repos="http://cran.rstudio.com")
+EOF
+
+  sudo restart shiny-server
+  
+#Possible to get access (read/write) onto the server's library for R so you can install whatever R stuff you need at any point in time?
+# make sure to install all your packages in that system library
+#example!!!!!
+#install.packages('~/bpaalib_0.4.0.9000.tar.gz', 
+#                 lib='/usr/local/lib/R/site-library', 
+#                 repos=NULL, 
+#                 type='source')
+
+
+####start R and load these below:
+
+####may not need the shiny one since we are installing shiny server
+install.packages('shiny')
+####
+install.packages('tidyverse')
+install.packages('XML')
+install.packages('stringr')
+install.packages('lubridate')
+install.packages('sqldf')
+install.packages('ggplot2')
+install.packages('scales')
+install.packages('plyr')
+install.packages('stringi')
+install.packages('RJDBC')
+
+install.packages('devtools')
+require('devtools')
+#may have to download addition steps
+install_github("ReportMort/rdfp")
